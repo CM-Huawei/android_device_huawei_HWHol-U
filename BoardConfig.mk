@@ -1,4 +1,4 @@
-LOCAL_PATH := device/google/sprout
+LOCAL_PATH := device/huawei/HWHol-U
 
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -24,13 +24,13 @@ BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
 DEVICE_RESOLUTION := 480x854
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/google/sprout/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/HWHol-U/bluetooth
 
 
 TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
 
-TARGET_KERNEL_SOURCE := kernel/mediatek/sprout
-TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig
+TARGET_KERNEL_SOURCE := kernel/mediatek/HWHol-U
+#TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig (to be fixed...)
 
 BOARD_RECOVERY_SWIPE := true
 
@@ -66,10 +66,10 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true
 
-BOARD_RIL_CLASS := ../../../device/google/sprout/ril/
+BOARD_RIL_CLASS := ../../../device/huawei/HWHol-U/ril/
 
 BOARD_SEPOLICY_DIRS += \
-    device/google/sprout/sepolicy
+    device/huawei/HWHol-U/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
