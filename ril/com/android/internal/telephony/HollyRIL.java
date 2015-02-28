@@ -31,15 +31,15 @@ import android.telephony.SignalStrength;
 import java.io.IOException;
 import java.io.InputStream;
 
-public class SproutRIL extends RIL implements CommandsInterface {
+public class HollyRIL extends RIL implements CommandsInterface {
 
 static final int RIL_REQUEST_SET_3G_CAPABILITY = 128;
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription) {
+    public HollyRIL(Context context, int networkMode, int cdmaSubscription) {
 	    super(context, networkMode, cdmaSubscription, null);
     }
 
-    public SproutRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
+    public HollyRIL(Context context, int networkMode, int cdmaSubscription, Integer instanceId) {
 	    super(context, networkMode, cdmaSubscription, instanceId);
     }
 

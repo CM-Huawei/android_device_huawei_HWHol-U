@@ -27,7 +27,7 @@ DEVICE_RESOLUTION := 720x1280
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/holly/bluetooth
 
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.holly
 
 TARGET_KERNEL_SOURCE := kernel/huawei/holly
 TARGET_KERNEL_CONFIG := holly_main_defconfig
