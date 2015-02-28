@@ -1,1 +1,1 @@
-add_lunch_combo cm_HWHol-U-userdebug
+add_lunch_combo cm_holly-userdebug

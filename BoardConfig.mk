@@ -1,4 +1,4 @@
-LOCAL_PATH := device/huawei/HWHol-U
+LOCAL_PATH := device/huawei/holly
 
 TARGET_BOARD_PLATFORM := mt6582
 TARGET_CPU_ABI := armeabi-v7a
@@ -22,15 +22,15 @@ BOARD_KERNEL_CMDLINE :=
 BOARD_MKBOOTIMG_ARGS := --kernel_offset 0x00008000 --ramdisk_offset 0x04000000 --tags_offset 0x00000100
 BOARD_KERNEL_BASE := 0x80000000
 BOARD_KERNEL_PAGESIZE := 2048
-DEVICE_RESOLUTION := 480x854
+DEVICE_RESOLUTION := 720x1280
 
-BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/HWHol-U/bluetooth
+BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := device/huawei/holly/bluetooth
 
 
-TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.sprout
+TARGET_RECOVERY_FSTAB := $(LOCAL_PATH)/rootdir/root/fstab.holly
 
-TARGET_KERNEL_SOURCE := kernel/mediatek/HWHol-U
-#TARGET_KERNEL_CONFIG := cyanogenmod_sprout_defconfig (to be fixed...)
+TARGET_KERNEL_SOURCE := kernel/huawei/holly
+TARGET_KERNEL_CONFIG := holly_main_defconfig
 
 BOARD_RECOVERY_SWIPE := true
 
@@ -66,10 +66,10 @@ TARGET_GLOBAL_CPPFLAGS += -mfpu=neon -mfloat-abi=softfp
 TARGET_USERIMAGES_USE_EXT4:=true
 USE_CAMERA_STUB := true
 
-BOARD_RIL_CLASS := ../../../device/huawei/HWHol-U/ril/
+BOARD_RIL_CLASS := ../../../device/huawei/holly/ril/
 
 BOARD_SEPOLICY_DIRS += \
-    device/huawei/HWHol-U/sepolicy
+    device/huawei/holly/sepolicy
 
 BOARD_SEPOLICY_UNION += \
     file_contexts \
